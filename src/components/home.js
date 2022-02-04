@@ -2,7 +2,7 @@ import Card from "../util/card";
 export default function Home() {
   return (
     <>
-      <h3>Welcome to the bank</h3>
+      <h1>Welcome to the bank</h1>
       <Card
         bgcolor="white"
         body={
