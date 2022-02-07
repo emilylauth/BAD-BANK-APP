@@ -2,7 +2,8 @@ import Card from "../util/card";
 export default function Home() {
   return (
     <>
-      <h1>Welcome to the bank</h1>
+      <h1>BadBank</h1>
+      <h3>Welcome to your React bank</h3>
       <Card
         bgcolor="white"
         body={

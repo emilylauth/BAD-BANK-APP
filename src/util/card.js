@@ -10,7 +10,6 @@ export default function Card(props) {
       className={classes()}
       style={{
         display: "flex",
-        justifyContent: "center",
         alignItems: "center",
         borderBlockStyle: "none",
       }}

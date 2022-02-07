@@ -52,7 +52,7 @@ export default function CreateAccount() {
                 className="form-control"
                 id="name"
                 name="name"
-                placeholder="Enter name"
+                placeholder="enter name"
                 onChange={formik.handleChange}
                 value={formik.values.name}
               />
@@ -67,7 +67,7 @@ export default function CreateAccount() {
                 className="form-control"
                 id="email"
                 name="email"
-                placeholder="Enter email"
+                placeholder="enter email"
                 onChange={formik.handleChange}
                 value={formik.values.email}
               />
@@ -82,7 +82,7 @@ export default function CreateAccount() {
                 className="form-control"
                 id="password"
                 name="password"
-                placeholder="Enter password"
+                placeholder="enter password"
                 onChange={formik.handleChange}
                 value={formik.values.password}
               />

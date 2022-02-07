@@ -23,8 +23,8 @@ export default function Deposit() {
       if (!values.amount || values.amount === "")
         errors.amount = "Field required";
       if (values.amount !== "" && isNaN(parseFloat(values.amount)))
-        errors.amount = "Just Numbers allowed";
-      if (values.amount < 0) errors.amount = "Negative Numbers not allowed";
+        errors.amount = "Please enter a numerical value";
+      if (values.amount < 0) errors.amount = "No negative numbers";
       return errors;
     },
   });
@@ -75,15 +75,13 @@ export default function Deposit() {
                 </div>
               </form>
             )}
-            {!state.currentUser && (
-              <div>You can't see this content without being logged in.</div>
-            )}
+            {!state.currentUser && <div>Please login to see this content</div>}
           </>
         }
       />
       {state.success && (
         <div className="alert alert-success" role="alert">
-          Succes!
+          Success!
         </div>
       )}
     </>

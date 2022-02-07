@@ -41,6 +41,7 @@ export default function Login() {
                     className="form-control"
                     id="emailField"
                     name="email"
+                    placeholder="enter email"
                     onChange={formik.handleChange}
                     value={formik.values.email}
                     aria-label="email-field"
@@ -56,6 +57,7 @@ export default function Login() {
                     className="form-control"
                     id="pswField"
                     name="password"
+                    placeholder="enter password"
                     onChange={formik.handleChange}
                     value={formik.values.password}
                     aria-label="password-field"
@@ -77,7 +79,7 @@ export default function Login() {
           ) : (
             <div>
               <div id="login-message">Login Succesful!</div>
-              <br /> Hello,{state.currentUser.name}
+              <br /> Hello, {state.currentUser.name}.
             </div>
           )
         }
